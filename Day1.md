@@ -31,13 +31,14 @@ Example: var percentage = 50.5;
 4. Lists
    A list is an ordered group of objects. We have two types of lists in Dart Programming Language: 
    Fixed Length List: A fixed list does not grow or shrink during runtime. That is you can't add or remove from the initial declared list size
-   Declaring a Fixed Lenght List in Dart:
-   var lst = new List(5);
-   lst [0] = 35;
-   lst [1] = 45;
-   lst [2] = 25;
-   lst [3] = 55;
-   lst [4] = 45;
+   Declaring a Fixed Length List in Dart:
+  var fixedLengthList = List<int>.filled(4, 0);
+  fixedLengthList [0] = 3;
+  fixedLengthList [1] = 3;
+  fixedLengthList [2] = 3;
+  fixedLengthList [3] = 3;
+  
+  //This is a fixed list with only 4 contents, starting from 0. Adding another list item to this list will throw an exception error. 
   The current size of the above list is 5, which was what we declared. Adding or removing to the list size will throw an Exception error
   
    Growable List: A growale list can grow or shrink during runtime. That is you can add or remove from the initial declared list size
