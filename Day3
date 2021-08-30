@@ -1,0 +1,27 @@
+##Today's learning journey continues, I went through everything that I learnt in the previous tutorial, changed somethings and tried out new things. 
+
+##For today, I learnt how to add Images to your app as an Asset Image. To do this, you simply download an image to the PC, u create a new Directory called images and then u drag and drop downloaded picture into the new images Directory created, you then go to the pubspec.yaml file added
+the assets propertie and the location of the images directory, then in my main.dart file I have to the apply a little change to the image property: to get the images from an AssetImage and not as a Network Image, I then picked in the asset name and the asset directory and that's all
+Find the code below to understand:
+
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(
+    MaterialApp(
+      home: Scaffold(
+        backgroundColor: Colors.blueGrey[900],
+        appBar: AppBar(
+          title: Text("I am Rich"),
+          backgroundColor: Colors.blueGrey[900],
+        ),
+        body: Center(
+          child: Image(
+            image: AssetImage('Images/diamond.png'),
+          ),
+        ),
+      ),
+    ),
+  );
+}
+Finally I learnt how to add an app icon to an app. 
